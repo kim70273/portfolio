@@ -1,0 +1,98 @@
+.projectTeam_content {
+  background-color: gainsboro;
+  -webkit-box-sizing: border-box;
+  width: 100%;
+  max-width: 71.25rem;
+  padding: 4rem 2rem;
+  margin: 0 auto;
+}
+
+.projectTeam_tile_box {
+  display: table;
+  position: relative;
+  margin: 0 auto 3rem;
+}
+
+.projectTeam_title {
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 1.5;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+
+.projectTeam_item_1 {
+  padding: 3rem;
+  margin: 0 auto 2rem;
+  border-radius: 1rem;
+  background-color: snow;
+  -webkit-box-shadow: 1rem 1rem 1rem 0 rgba(68, 68, 68, 0.2);
+}
+
+.projectTeam_item_1_title {
+  font-size: 2rem;
+  padding-bottom: 0.5rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.projectTeam_item_1_title_mini {
+  margin-bottom: 2rem;
+  font-size: 400;
+  font-weight: 1rem;
+  color: #6c757d;
+  text-align: center;
+  opacity: 0.8;
+}
+
+.projectTeam_item_content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  -webkit-box-pack: center;
+}
+
+.projectTeam_item_content_img_box {
+  width: 50%;
+  margin-right: 0;
+  margin-bottom: 1rem;
+  right: 2rem;
+  position: relative;
+}
+
+.zari_img {
+  width: 480px;
+  height: 300px;
+}
+
+.projectTeam_description_box {
+  width: 50%;
+}
+
+.projectTeam_description {
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #ccc;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.projectTeam_description-element {
+  margin-bottom: 1rem;
+}
+
+.projectTeam_description_label {
+  display: inline-block;
+  vertical-align: top;
+  width: 8.4rem;
+  font-weight: 900;
+  font-size: 1rem;
+}
+
+.projectTeam_description_content {
+  display: inline-block;
+  vertical-align: bottom;
+  width: calc(100% - 8.4rem);
+  font-weight: 400;
+  font-size: 1rem;
+}

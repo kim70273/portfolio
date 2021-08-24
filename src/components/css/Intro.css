@@ -1,0 +1,53 @@
+.Intro_content {
+  margin-top: 10rem;
+  display: flex;
+  flex-flow: row nowrap;
+  margin-bottom: 2rem;
+  margin-right: 4rem;
+}
+
+.idPicture_box {
+  width: 50%;
+  text-align: center;
+}
+
+.idPicture {
+  border-radius: 60%;
+}
+
+.Intro_description_box {
+  width: 50%;
+  justify-content: center;
+}
+
+.Intro_description_1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+.Intro_description_2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.Intro_description_3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  padding-bottom: 4rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.Intro_description_item_box {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.Intro_description_item {
+  margin-left: 2rem;
+  text-align: center;
+  font-weight: 500;
+}

@@ -1,38 +1,120 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: "EliceDigitalBaeum_Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/EliceDigitalBaeum_Bold.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: "EliceDigitalBaeum_Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/EliceDigitalBaeum_Regular.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  font-family: "EliceDigitalBaeum_Regular";
+}
+a {
+  text-decoration: none;
+}
+a:link {
+  color: #000;
+}
+a:visited {
+  color: #000;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: white;
+  z-index: 10;
+}
+
+.header_content {
+  width: 100%;
+  max-width: 71.25rem;
+  height: 1.5rem;
+  padding: 1.25rem 2rem;
+  margin: 0 auto;
+}
+
+.header_title {
+  margin-left: 1rem;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  cursor: pointer;
+}
+
+.header_nav {
+  float: right;
+}
+
+.header_nav_item {
+  display: inline-block;
+  padding: 0 1rem;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 2rem;
+  cursor: pointer;
+}
+
+.intro_content {
+  -webkit-box-sizing: border-box;
+  width: 100%;
+  max-width: 71.25rem;
+  padding: 4rem 2rem;
+  margin: 0 auto;
+}
+
+.intro_tile_box {
+  display: table;
+  position: relative;
+  margin: 0 auto 3rem;
+}
+
+.intro_title {
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 1.5;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+
+.intro_item_box {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  -webkit-box-pack: justify;
 }
 
-.App-link {
-  color: #61dafb;
+.intro_item {
+  width: 50%;
+  margin-bottom: 2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.item_box {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  max-width: 14rem;
+  margin: 0 auto;
+}
+
+.item_1 {
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.item_2 {
+  font-weight: 400;
+  font-size: 1rem;
 }
