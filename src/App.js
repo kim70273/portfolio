@@ -15,12 +15,12 @@ function App() {
   return (
     <div className="root" >
 
-      <header className="header" >
+      <HeaderS >
         <div className="header_content">
           <FiBookOpen size={"30"}/>
           <div className="header_title"><a href="#intro">김성현의 포트폴리오</a></div>
 
-          <Navbar >
+          <Navbar>
             <Menubar >
               <a onClick={() => {setmenu(!menu)}}><IoIosMenu/></a>
             </Menubar>
@@ -34,7 +34,7 @@ function App() {
           </Navbar>
           
         </div>
-      </header>
+        </HeaderS>
 
       <Intro />
 
@@ -116,11 +116,23 @@ function App() {
       <ProjectTeam />
       <Project />
     </div>
+    
   );
 
 
 
 }
+const HeaderS = styled.header`
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        background-color: white;
+        z-index: 10;
+        
+        @media screen and (max-width: 900px) {
+          max-width: 71.25rem;
+        }`
 
 const Navbar = styled.div`
 float: right;
@@ -151,5 +163,9 @@ float: right;
                return menu === false ? 'none' : 'flex'
             }};
         }`
+
+    
+
+      
 
 export default App;
