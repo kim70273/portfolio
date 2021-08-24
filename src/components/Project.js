@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './css/Project.css';
+import styled from "styled-components";
 
 import youtubeClone_1 from './images/Project/youtubeClone_1.png';
 import youtubeClone_2 from './images/Project/youtubeClone_2.png';
@@ -33,8 +34,8 @@ const Project = () => {
                     <div className="project_item_1_title">YouTube Clone Coding</div>
                     <div className="project_item_1_title_mini">(2021.07~2021.08 / 개인 프로젝트)</div>
 
-                    <div className="project_item_content">
-                        <div className="project_item_content_img_box">
+                    <Common>
+                        <Imgbox>
 
                             <Slider {...settings}>
                                 <div>
@@ -47,9 +48,9 @@ const Project = () => {
                                 <img className="zari_img" src={youtubeClone_3} />
                                 </div>
                             </Slider>
-                        </div>
+                        </Imgbox>
 
-                        <div className="project_description_box">
+                        <Desbox>
                             <div className="project_description">
                             boilerplate를 이용해서 만든 비디오를 업로드하고 볼 수 있는 웹사이트입니다.
                             front-end의 react와 express 서버가 어떻게 상호작용 하는지 배울 수 있었고,
@@ -86,8 +87,8 @@ const Project = () => {
                             </div>
 
                             
-                        </div>
-                    </div>
+                            </Desbox>
+                    </Common>
                 </div>
                 
 
@@ -159,5 +160,33 @@ const Project = () => {
         </div>
     )
 }
+
+const Common = styled.div`
+display: flex;
+flex-flow: row wrap;
+justify-content: center;
+-webkit-box-pack: center;
+    @media screen and (max-width: 900px) {
+        flex-direction: column;
+    }`
+
+const Imgbox = styled.div`
+width: 50%;
+margin-right: 0;
+margin-bottom: 1rem;
+right: 2rem;
+position: relative;
+ @media screen and (max-width: 900px) {
+    width: 100%;
+    margin-left:2rem;
+    
+}`
+
+const Desbox = styled.div`
+width: 50%;
+@media screen and (max-width: 900px) {
+  width: 100%;
+  margin-top: 2rem;
+}`
 
 export default Project;

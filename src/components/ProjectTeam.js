@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './css/ProjectTeam.css';
+import styled from "styled-components";
 
 import zari_1 from './images/ProjectTeam/zari_1.jpeg';
 import zari_2 from './images/ProjectTeam/zari_2.jpeg';
@@ -34,8 +35,8 @@ const ProjectTeam = () => {
                     <div className="projectTeam_item_1_title">ZARI</div>
                     <div className="projectTeam_item_1_title_mini">(2020.09~2020.12 / 5인 프로젝트)</div>
 
-                    <div className="projectTeam_item_content">
-                        <div className="projectTeam_item_content_img_box">
+                    <Common>
+                        <Imgbox>
 
                             <Slider {...settings}>
                                 <div>
@@ -48,9 +49,9 @@ const ProjectTeam = () => {
                                 <img className="zari_img" src={zari_3} />
                                 </div>
                             </Slider>
-                        </div>
+                        </Imgbox>
 
-                        <div className="projectTeam_description_box">
+                        <Desbox>
                             <div className="projectTeam_description">
                             코로나로 인해서 식당을 가더라도 되도록 사람들이 적은 곳을 가기 위해 
                             가게에 사람들이 얼마나 있는지 대략 적으로 알 수 있게 해주는 웹입니다. 또한 학교 축제 등에서
@@ -94,8 +95,8 @@ const ProjectTeam = () => {
                                 <a href="https://zari-b4d28.web.app" target="_blank">https://zari-b4d28.web.app</a>
                                 </div>
                             </div>
-                        </div>
-                    </div>
+                        </Desbox>
+                    </Common>
                 </div>
                 
 
@@ -105,5 +106,33 @@ const ProjectTeam = () => {
         </div>
     )
 }
+
+const Common = styled.div`
+display: flex;
+flex-flow: row wrap;
+justify-content: center;
+-webkit-box-pack: center;
+    @media screen and (max-width: 900px) {
+        flex-direction: column;
+    }`
+
+const Imgbox = styled.div`
+width: 50%;
+margin-right: 0;
+margin-bottom: 1rem;
+right: 2rem;
+position: relative;
+ @media screen and (max-width: 900px) {
+    width: 100%;
+    margin-left:2rem;
+    
+}`
+
+const Desbox = styled.div`
+width: 50%;
+@media screen and (max-width: 900px) {
+  width: 100%;
+  margin-top: 2rem;
+}`
 
 export default ProjectTeam;

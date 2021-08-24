@@ -16,6 +16,7 @@
 
 body {
   font-family: "EliceDigitalBaeum_Regular";
+  word-break: keep-all;
 }
 a {
   text-decoration: none;

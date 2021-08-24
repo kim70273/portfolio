@@ -1,4 +1,5 @@
 import './App.css';
+import React, {useState} from 'react';
 import Intro from './components/Intro';
 import Career from './components/Career';
 import Project from './components/Project';
@@ -6,20 +7,32 @@ import ProjectTeam from './components/ProjectTeam';
 import { GoMarkGithub} from "react-icons/go";
 import { GrInstagram } from "react-icons/gr";
 import { FiBookOpen } from "react-icons/fi";
+import { IoIosMenu } from "react-icons/io";
+import styled from "styled-components";
 
 function App() {
+  const [menu, setmenu] = useState(false);
   return (
     <div className="root" >
+
       <header className="header" >
         <div className="header_content">
           <FiBookOpen size={"30"}/>
           <div className="header_title"><a href="#intro">김성현의 포트폴리오</a></div>
-          <div className="header_nav">
+
+          <Navbar >
+            <Menubar >
+              <a onClick={() => {setmenu(!menu)}}><IoIosMenu/></a>
+            </Menubar>
+
+            <NavSub menu={menu}>
             <div className="header_nav_item"><a href="#profile">소개</a></div>
             <div className="header_nav_item"><a href="#career">수상/경력</a></div>
             <div className="header_nav_item"><a href="#projectTeam">팀 프로젝트</a></div>
             <div className="header_nav_item"><a href="#project">개인 프로젝트</a></div>
-          </div>
+            </NavSub>
+          </Navbar>
+          
         </div>
       </header>
 
@@ -104,6 +117,39 @@ function App() {
       <Project />
     </div>
   );
+
+
+
 }
+
+const Navbar = styled.div`
+float: right;
+    
+    @media screen and (max-width: 900px) {
+      display: flex;
+      align-items:center;
+        flex-direction: column;
+        align-items:flex-end;
+        margin-right:3rem;
+    }`
+
+    const Menubar = styled.div`
+    font-size: 30px;
+    @media screen and (min-width: 900px) {
+        display: none;    
+    }`
+
+    const NavSub = styled.div`
+    float: right;
+        
+        @media screen and (max-width: 900px) {
+          display: flex;
+          align-items:center;
+            flex-direction: column;
+            align-items:flex-end;
+            display: ${({menu}) => {
+               return menu === false ? 'none' : 'flex'
+            }};
+        }`
 
 export default App;

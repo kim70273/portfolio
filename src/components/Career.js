@@ -5,8 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import './css/Career.css';
 import career_img_1 from './images/career_1.jpeg';
 import career_img_2 from './images/career_2.jpeg';
-
-
+import styled from "styled-components";
 
 const Career = () => {
     const settings = {
@@ -27,8 +26,11 @@ const Career = () => {
                 <div className="career_item_1">
                     <div className="career_item_1_title">오픈소스 SW 경진대회 동상</div>
                     <div className="career_item_1_title_mini">(2020학년도 제 2회, 알고리즘 부문)</div>
-                    <div className="career_item_content">
-                        <div className="career_item_content_img_box">
+
+
+                    <Common>
+                        
+                        <Imgbox>
 
                             <Slider {...settings}>
                                 <div>
@@ -40,22 +42,51 @@ const Career = () => {
                             </Slider>
 
             
-                        </div>
+                        </Imgbox>
 
-                        <div className="career_description_box">
+                        <Desbox>
                             <div className="career_description">
                             알고리즘 공부를 하면서, 시험장 같은 분위기에서 저의 역량을 평가해보기위해
                             교내에서 <b>오픈소스 SW 경진대회</b>에 참여하였습니다. 항상 더 효율적인 알고리즘이 무엇인지
                             생각해보고 시간 복잡도와 공간 복잡도를 생각 하면서 알고리즘 공부를 꾸준히 하고 있습니다.
                             </div>  
-                        </div>
+                        </Desbox>
 
+                    </Common>
 
-                    </div>
+                    
                 </div>
             </div>
         </div>
     )
 }
+
+const Common = styled.div`
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    -webkit-box-pack: center;
+    @media screen and (max-width: 900px) {
+        flex-direction: column;
+    }`
+
+const Imgbox = styled.div`
+  width: 50%;
+  margin-right: 0;
+  margin-bottom: 1rem;
+  text-align: center;
+  right: 2rem;
+  position: relative;
+ @media screen and (max-width: 900px) {
+    width: 100%;
+    margin-left:2rem;
+    
+}`
+
+const Desbox = styled.div`
+width: 50%;
+@media screen and (max-width: 900px) {
+  width: 100%;
+}`
 
 export default Career;
