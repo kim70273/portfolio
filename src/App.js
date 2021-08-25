@@ -129,10 +129,7 @@ const HeaderS = styled.header`
         left: 0;
         background-color: white;
         z-index: 10;
-        
-        @media screen and (max-width: 900px) {
-          max-width: 71.25rem;
-        }`
+        `
 
 const Navbar = styled.div`
 float: right;
@@ -143,10 +140,20 @@ float: right;
         flex-direction: column;
         align-items:flex-end;
         margin-right:3rem;
+        background-color: white;
     }`
 
     const Menubar = styled.div`
-    font-size: 30px;
+    float: right;
+    -webkit-box-sizing: border-box;
+    width: 3.5rem;
+    height: 3rem;
+    padding: .5rem 0;
+    margin-top: -.5rem;
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: .25rem;
+    text-align: center;
+    cursor: pointer;
     @media screen and (min-width: 900px) {
         display: none;    
     }`

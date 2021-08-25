@@ -1,8 +1,13 @@
+.test_career {
+  background-color: #b3e5fc;
+}
+
 .career_content {
   background-color: #b3e5fc;
   -webkit-box-sizing: border-box;
   width: 100%;
   max-width: 71.25rem;
+  min-width: 30rem;
   padding: 4rem 2rem;
   margin: 0 auto;
 }

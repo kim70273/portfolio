@@ -17,6 +17,7 @@ const Career = () => {
       };
     
     return (
+        <article className="test_career">
         <div className="career_content" id="career">
             <div className="career_tile_box">
             <div className="career_title">수상/경력</div>
@@ -58,6 +59,7 @@ const Career = () => {
                 </div>
             </div>
         </div>
+        </article>
     )
 }
 
@@ -80,6 +82,8 @@ const Imgbox = styled.div`
  @media screen and (max-width: 900px) {
     width: 100%;
     margin-left:2rem;
+    margin-right: 0;
+    margin-bottom: 1rem;
     
 }`
 

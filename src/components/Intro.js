@@ -36,6 +36,9 @@ const Intro = () => {
 }
 
 const Common = styled.div`
+width: 100%;
+max-width: 71.25rem;
+  min-width: 30rem;
 margin-top: 10rem;
 display: flex;
 flex-flow: row nowrap;
