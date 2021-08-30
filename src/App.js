@@ -139,7 +139,7 @@ float: right;
       align-items:center;
         flex-direction: column;
         align-items:flex-end;
-        margin-right:3rem;
+        margin-right:.5rem;
         background-color: white;
     }`
 
