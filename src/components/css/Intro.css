@@ -6,7 +6,8 @@
   display: flex;
   flex-flow: row nowrap;
   margin-bottom: 2rem;
-  margin-right: 4rem;
+  padding: 4rem 2rem;
+  margin: 0 auto;
 }
 
 .idPicture_box {
@@ -24,16 +25,18 @@
 }
 
 .Intro_description_1 {
-  font-size: 2rem;
+  font-size: 1.9rem;
   font-weight: 700;
   margin-top: 4rem;
   margin-bottom: 2rem;
+  white-space: pre-wrap;
 }
 
 .Intro_description_2 {
   font-size: 1.5rem;
   font-weight: 500;
   margin-bottom: 2rem;
+  white-space: pre-wrap;
 }
 
 .Intro_description_3 {
@@ -42,6 +45,7 @@
   margin-bottom: 2rem;
   padding-bottom: 4rem;
   border-bottom: 1px solid #ccc;
+  white-space: pre-wrap;
 }
 
 .Intro_description_item_box {

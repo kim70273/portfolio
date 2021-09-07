@@ -10,7 +10,7 @@ const Intro = () => {
         <Common id="intro">
             <Imgbox>
             
-                <img className="idPicture" src={idPicture} />
+                <img className="idPicture" src={idPicture} alt="idPicture" />
                 <h1>Sung Hyeon Kim</h1>
             </Imgbox>
 
@@ -18,8 +18,8 @@ const Intro = () => {
             <Desbox>
                 <div className="Intro_description_1">안녕하세요! 웹 개발자를 꿈 꾸고 있는 김성현입니다!</div>
                 <div className="Intro_description_2">Front-end, Back-end에 모두 관심이 있으며,<br/>
-                    현재에는 Front-end에 더 중점적으로 공부하고 있습니다.</div>
-                <div className="Intro_description_3">항상 포기하지않고 끊임없이 해결방법을 생각해겠습니다!</div>
+                                                     현재에는 Front-end에 더 중점적으로 공부하고 있습니다.</div>
+                <div className="Intro_description_3">항상 포기하지않고 끊임없이 해결방법을 생각해내겠습니다!</div>
                 <div className="Intro_description_item_box">
                     <div className="Intro_description_item">
                         <a href="https://github.com/kim70273" target="_blank"><GoMarkGithub size={"50"}/></a>
@@ -38,20 +38,20 @@ const Intro = () => {
 const Common = styled.div`
 width: 100%;
 max-width: 71.25rem;
-  min-width: 30rem;
+min-width: 30rem;
 margin-top: 10rem;
 display: flex;
 flex-flow: row nowrap;
 margin-bottom: 2rem;
 margin-right: 4rem;
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 1000px) {
         flex-direction: column;
     }`
 
 const Imgbox = styled.div`
 width: 50%;
 text-align: center;
- @media screen and (max-width: 900px) {
+ @media screen and (max-width: 1000px) {
     width: 100%;
     margin-left:2rem;
     
@@ -60,7 +60,7 @@ text-align: center;
 const Desbox = styled.div`
 width: 50%;
   justify-content: center;
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
   width: 100%;
   margin-left:2rem;
 }`
